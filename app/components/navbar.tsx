@@ -78,7 +78,7 @@ export default function Navbar() {
               href="/"
               className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center space-x-1"
             >
-              <span>Putri.M</span>
+              <span>Putri.</span>
             </Link>
           </div>
 

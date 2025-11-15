@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
+import Link from "next/link";
 
 export default function Home() {
   const skills = [
@@ -44,13 +45,25 @@ export default function Home() {
             <p className="text-xl text-blue-600 dark:text-blue-400 font-medium mb-4">
               Lulusan D3 Akuntansi ASM Ariyanti
             </p>
-            <p className="text-lg text-zinc-600 dark:text-zinc-300 max-w-2xl">
+            <p className="text-lg text-zinc-600 dark:text-zinc-300 max-w-2xl mb-8">
               Profesional akuntansi yang berdedikasi dengan pemahaman mendalam tentang prinsip-prinsip akuntansi 
               dan kemampuan analitis yang kuat untuk mendukung pengambilan keputusan bisnis yang tepat.
             </p>
+            
+            {/* Tombol Tentang Saya */}
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-user">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Pelajari Lebih Lanjut Tentang Saya
+            </Link>
           </section>
 
-          {/* Bagian Pendidikan - SEKARANG DI ATAS */}
+          {/* Bagian Pendidikan */}
           <section id="education" className="w-full mb-16">
             <h2 className="text-2xl font-bold text-zinc-800 dark:text-white mb-8 text-center">Pendidikan</h2>
             <div className="bg-white dark:bg-zinc-800 p-8 rounded-xl shadow-md border border-zinc-100 dark:border-zinc-700">
@@ -73,7 +86,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Bagian Keahlian - SEKARANG DI BAWAH PENDIDIKAN */}
+          {/* Bagian Keahlian */}
           <section id="skills" className="w-full mb-16">
             <h2 className="text-2xl font-bold text-zinc-800 dark:text-white mb-8 text-center">Keahlian</h2>
             
