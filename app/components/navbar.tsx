@@ -30,13 +30,23 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = [
+  // Menu untuk halaman beranda
+  const homeNavItems = [
     { name: "Beranda", id: "home", href: "/" },
     { name: "Tentang", id: "about", href: "/about" },
-    { name: "Keahlian", id: "skills", href: "/#skills" },
     { name: "Pendidikan", id: "education", href: "/#education" },
+    { name: "Keahlian", id: "skills", href: "/#skills" },
     { name: "Kontak", id: "contact", href: "/#contact" },
   ];
+
+  // Menu untuk halaman about (hanya beranda dan tentang)
+  const aboutNavItems = [
+    { name: "Beranda", id: "home", href: "/" },
+    { name: "Tentang", id: "about", href: "/about" },
+  ];
+
+  // Tentukan menu mana yang akan ditampilkan
+  const navItems = pathname === "/about" ? aboutNavItems : homeNavItems;
 
   const isActiveLink = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -68,7 +78,7 @@ export default function Navbar() {
               href="/"
               className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center space-x-1"
             >
-              <span>Putri.</span>
+              <span>Putri.M</span>
             </Link>
           </div>
 
