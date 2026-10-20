@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function About() {
   const personalInfo = [
     { label: "Nama", value: "Putri Maheswari" },
-    { label: "Email", value: "putrimhswri24@gmail.com" },
-    { label: "Telepon", value: "+62 812-3456-7890" },
+    { label: "Email", value: "putrimhswri893@gmail.com" },
+    { label: "Telepon", value: "+62 895-0775-9765" },
     { label: "Alamat", value: "Cimahi,  Jawa Barat, Indonesia" },
     { label: "Pendidikan", value: "D3 Akuntansi - ASM Ariyanti" },
     { label: "Status", value: "Lulusan Siap Kerja" },
